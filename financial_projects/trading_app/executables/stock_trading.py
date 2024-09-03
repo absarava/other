@@ -1,10 +1,6 @@
-from datetime import datetime, timedelta
-import alpaca
 import os
-from alpaca.data.historical.stock import StockHistoricalDataClient, StockLatestTradeRequest, StockLatestQuoteRequest
 from alpaca.trading.client import TradingClient, GetAssetsRequest
-from alpaca.trading.requests import GetOptionContractsRequest, LimitOrderRequest, MarketOrderRequest, GetOrdersRequest
-from alpaca.trading.enums import AssetStatus, ContractType, OrderSide, OrderType, TimeInForce, QueryOrderStatus, AssetClass
+from alpaca.trading.enums import AssetClass
 
 ALPACA_TRADE_API_KEY = os.environ.get('ALPACA_TRADE_API_KEY')
 ALPACA_TRADE_API_SECRET_KEY = os.environ.get('ALPACA_TRADE_API_SECRET_KEY')
